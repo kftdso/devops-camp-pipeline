@@ -11,7 +11,7 @@ pipeline {
    stages {
         stage('Application repository') {
             steps {
-                echo "Cloning application repository"
+                echo "Cloning app repository"
                 sh 'git clone https://github.com/kftdso/afs-labs-student.git'
                 dir('afs-labs-student') {
                     script {
